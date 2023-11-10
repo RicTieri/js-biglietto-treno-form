@@ -15,8 +15,8 @@ if (guestAge < 18) {
   discount = '0%'
 }
 
-document.getElementById('guest_age').innerHTML = 'Età passeggiero è ' + guestAge;
-document.getElementById('trip_length').innerHTML = 'I km da percorrere sono ' + roadMapLength;
-document.getElementById('trip_cost').innerHTML = 'Il totale lordo è ' + tripCost.toFixed(2);
+document.getElementById('guest_age').innerHTML = 'Età passeggiero: ' + guestAge;
+document.getElementById('trip_length').innerHTML = 'La distanza da percorrere è ' + roadMapLength + ' km';
+document.getElementById('trip_cost').innerHTML = 'Il totale lordo è ' + tripCost.toFixed(2) + '\u20AC';
 document.getElementById('trip_discount').innerHTML = 'Lo sconto applicato è ' + discount;
-document.getElementById('trip_price').innerHTML = 'Il totale effettivo è ' + tripPrice.toFixed(2);
+document.getElementById('trip_price').innerHTML = 'Il totale effettivo è ' + tripPrice.toFixed(2) + '\u20AC';
