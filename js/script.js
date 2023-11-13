@@ -1,5 +1,4 @@
-const roadMapLength = parseInt(prompt('Quanti chilometri vuoi percorrere?'));
-const guestAge = parseInt(prompt('Quanti anni hai?'));
+
 let tripCost = roadMapLength * 0.21;
 let tripPrice;
 let discount;
