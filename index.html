@@ -19,11 +19,28 @@
 </head>
 
 <body>
-  <div>
-    <input type="text" id="user_distance" placeholder="Inserisci la distanza">
-    <input type="text" id="user_age" placeholder="Inserisci la tua età">
-    <button>Calcola</button>
-  </div>
+  <main>
+    <div class="wrapper flex">
+      <div class="card">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="card-top flex col">
+          <div class="user-input flex space-around">
+            <input type="text" id="user_name" placeholder="Inserisci il tuo nome">
+            <input type="text" id="user_distance" placeholder="Inserisci la distanza">
+            <input type="text" id="user_age" placeholder="Inserisci la tua età">
+          </div>
+          <div class="call-to-action flex">
+            <button>Calcola</button>
+            <button>Annulla</button>
+          </div>
+        </div>
+        <div class="card-bottom">
+    
+        </div>
+      </div>
+    </div>
+  </main>
+
   <script src="./js/script.js"></script>
 </body>
 

@@ -8,3 +8,60 @@ body{
   font-family: 'Source Code Pro', monospace;
 }
 
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col{
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  background-color: #b91450;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.card-top{
+  background-color: white;
+  padding: 1rem 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px 0px rgb(56, 56, 56);
+}
+
+.user-input{
+  width: 100%;
+  padding: 1rem ;
+}
+
+.card-top input{
+  padding: 1rem;
+  margin: .25rem;
+  width: calc(100% / 3 - .5rem);
+  border-radius: 15px;
+  border: 1px solid rgb(172, 171, 171);
+}
+
+button{
+  margin: .5rem;
+  padding: .25rem .5rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #b91450;
+}
+
+
