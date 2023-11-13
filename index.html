@@ -25,17 +25,44 @@
         <h1>Calcola il prezzo del tuo biglietto</h1>
         <div class="card-top flex col">
           <div class="user-input flex space-around">
-            <input type="text" id="user_name" placeholder="Inserisci il tuo nome">
-            <input type="text" id="user_distance" placeholder="Inserisci la distanza">
-            <input type="text" id="user_age" placeholder="Inserisci la tua età">
+            <div class="input flex col">
+              <label for="user_name">Nome e Cognome</label>
+              <input type="text" id="user_name" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="input flex col">
+              <label for="user_distance">Km da percorrere</label>
+              <input type="text" id="user_distance" placeholder="Inserisci la distanza">
+            </div>
+            <div class="input flex col">
+              <label for="user_age">Età</label>
+              <input type="text" id="user_age" placeholder="Inserisci la tua età">
+            </div>
           </div>
           <div class="call-to-action flex">
             <button>Calcola</button>
             <button>Annulla</button>
           </div>
         </div>
-        <div class="card-bottom">
-    
+        <h1>Il tuo biglietto</h1>
+        <div class="card-bottom flex">
+          <div class="ticket flex">
+            <div class="detail-1">
+              <p>Nome passeggero</p>
+              <p id="passenger"></p>
+            </div>
+            <div class="detail-2">
+              <p>Offertà</p>
+              <p id="offer"></p>
+            </div>
+            <div class="detail-2">
+              <p>Carrozza</p>
+              <p id="carriage"></p>
+            </div>
+            <div class="detail-2">
+              <p>Prezzo</p>
+              <p id="lastprice"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

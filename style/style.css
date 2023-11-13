@@ -16,7 +16,7 @@ body{
 
 .col{
   flex-direction: column;
-  flex-grow: 1;
+  align-items: stretch;
 }
 
 .space-around{
@@ -35,33 +35,64 @@ h1{
   margin-bottom: 2rem;
 }
 
-.card-top{
+.card-top,
+.card-bottom {
   background-color: white;
   padding: 1rem 0;
+  margin-bottom: 2rem;
   border-radius: 20px;
   box-shadow: 0px 0px 50px 0px rgb(56, 56, 56);
 }
 
 .user-input{
   width: 100%;
-  padding: 1rem ;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.input{
+  width: calc(100% / 3);
 }
 
 .card-top input{
   padding: 1rem;
-  margin: .25rem;
-  width: calc(100% / 3 - .5rem);
+  width: 100%;
   border-radius: 15px;
-  border: 1px solid rgb(172, 171, 171);
+  border: 2px solid #b91450;
+  box-shadow: 0px 0px 5px 0px rgb(186, 186, 186);
+}
+
+label{
+  color: #b91450;
+  font-weight: bold;
+  margin: .25rem .5rem;
 }
 
 button{
   margin: .5rem;
-  padding: .25rem .5rem;
+  padding: .5rem .75rem;
   border-radius: 20px;
   border: none;
   color: white;
   background-color: #b91450;
+}
+
+.ticket{
+  border: 2px solid gray;
+  width: 100%;
+  margin: 1rem 2rem;
+  justify-content: flex-start;
+}
+
+.detail-1{
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+}
+
+.detail-2{
+  padding: 1rem;
+  margin: 0 1rem;
 }
 
 

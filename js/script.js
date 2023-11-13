@@ -1,8 +1,9 @@
 const buttonElement = document.querySelector('button')
 
 buttonElement.addEventListener('click', function(){
-  const roadMapLength = parseFloat(document.getElementById('user_distance').value)
-  const guestAge = parseFloat(document.getElementById('user_age').value)
+  const userName = document.getElementById('user_name').value;
+  const roadMapLength = parseFloat(document.getElementById('user_distance').value);
+  const guestAge = parseFloat(document.getElementById('user_age').value);
   let tripCost = roadMapLength * 0.1976;
   let tripPrice;
   let discount;
@@ -18,6 +19,7 @@ buttonElement.addEventListener('click', function(){
     discount = '0%'
   }
   console.log(tripPrice.toFixed(2)); 
+  console.log(userName)
 })
 
 
